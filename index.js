@@ -20,6 +20,6 @@ bot.on("message", msg => {
     const { content } = msg;
     if (content.startsWith(prefix)) {
         const [command, args] = CM.parse(content);
-        CM.exec(command, args, msg, bot);
+        CM.exec(command, {args, msg, bot});
     }
 });

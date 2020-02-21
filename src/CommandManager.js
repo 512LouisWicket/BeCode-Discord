@@ -39,16 +39,34 @@ class CommandManager {
         }
     }
 
+    /**
+     * @description Split the content of a message into a command name and an argument list
+     * @param { String } content The content of the discord message
+     * @returns { Array<String, Array<String?>> } An array containing the command name and its list of arguments
+     */
+
     parse(content) {
         const [command, ...args] = content.substring(this.prefix.length).split(/\s+/);
         return [command, args];
     }
 
+    /**
+     * @description Check that a command is defined in the commandList
+     * @param command The command name to check
+     * @returns { Boolean } True if the command is set in the commandList, otherwise false
+     */
+
     exists(command) {
         return this.commandList.has(command);
     }
 
-    exec(command, ...args) {
+    /**
+     * @description Execute the command with the passed arguments
+     * @param { String } command The command to execute
+     * @param { Object } args The arguments to pass to the command
+     */
+
+    exec(command, args) {
         if (this.exists(command)) {
             this.commandList.get(command).action(args);
         }
