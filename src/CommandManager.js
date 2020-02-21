@@ -5,7 +5,7 @@ const { readdirSync } = require("fs");
 
 /**
  * @class Command
- * @classdesc Represent a discord bot command
+ * @description Represent a discord bot command
  */
 
 class Command {
@@ -19,7 +19,7 @@ class Command {
 
 /**
  * @class CommandManager
- * @classdesc Create and handle commands
+ * @description Create and handle commands
  */
 
 class CommandManager {
@@ -52,7 +52,7 @@ class CommandManager {
 
     /**
      * @description Check that a command is defined in the commandList
-     * @param command The command name to check
+     * @param { String } command The command name to check
      * @returns { Boolean } True if the command is set in the commandList, otherwise false
      */
 
