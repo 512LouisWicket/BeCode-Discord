@@ -5,7 +5,8 @@ const config = require("./config/config.json");
 const prefix = config.prefix || "!";
 
 // Create a new bot client, connect it and display a message in the console when it is ready
-const bot = new (require("discord.js").Client)();
+const { Client } = require("discord.js");
+const bot = new Client();
 bot.login(config.token);
 bot.once("ready", () => console.log("\x1b[32m%s\x1b[0m", `Bffvuut, bffvuut ! ${bot.user.username} est dans la place.`));
 
