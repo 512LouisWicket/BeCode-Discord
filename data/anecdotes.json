@@ -11,23 +11,40 @@
             "La propriété `length` d’une fonction donne son nombre de paramètres.```javascript\nfunction test(param1, param2) {\n   // ...\n}\nconsole.log(test.length); // 2```",
             "`document.all` est une valeur *falsy*, c’est-à-dire qu’elle vaut `false` une fois convertie en booléen.```javascript\nconsole.log(Boolean(document.all)); // false```",
             "La manière la plus simple de vider un tableau en JavaScript est de changer la valeur de sa propriété `length` par 0. ```javascript\nconst arr = [1, 2, 3];\narr.length = 0;\nconsole.log(arr); // []```",
-            "Le 'plus unaire' est certainement la manière la plus simple de convertir un String en nombre avec JavaScript. ```javascript\nconsole.log(+'512'); // 512```",
+            "Le 'plus unaire' est certainement la manière la plus simple de convertir un String en nombre avec JavaScript. ```javascript\nconsole.log(+ '512'); // 512```",
             "`typeof null` vaut `object`, c’est un bug présent depuis la toute première version de JavaScript, dû à la manière dont étaient représentés les différents types de variable en binaire.",
             "En JavaScript, NaN est la seule valeur qui n’est pas égale à elle-même.```javascript\nconsole.log(NaN === NaN); // false```",
-            "À l’origine, JavaScript aurait dû s’appeler 'Mocha'. C’est pour tirer parti de la popularité autrefois grandissante de Java qu’il fut finalement nommé 'JavaScript'."
+            "À l’origine, JavaScript aurait dû s’appeler 'Mocha'. C’est pour tirer parti de la popularité autrefois grandissante de Java qu’il fut finalement nommé 'JavaScript'.",
+			"Pour supprimer un élément d’un tableau, la méthode `pop()` est plus rapide que la méthode `shift()`, car elle enlève le dernier élément et décrémente la propriété `length` du tableau, tandis que la méthode `shift()` doit décaler tous les index de 1.",
+			"Il est possible de convertir très facilement une variable en booléen en la précédant de deux points d’exclamation.```javascript\nconsole.log(!!0); // false```",
+			"En JavaScript, `undefined` peut être utilisé comme nom de variable. C’est la raison pour laquelle certains développeurs préfèrent écrire `void null` plutôt que `undefined`, afin de s’assurer d’avoir une variable de type `undefined`.```javascript\nconst undefined = \"lol\";\nconsole.log(undefined); // \"lol\"\nconsole.log(void null); // undefined```"
         ]
     ],
     [
         "php",
         [
-            "À l’origine, PHP s’appelait PHP/FI, pour **P**ersonal **H**ome **P**age Tools/**F**orm **I**nterpreter. C’était une simple bibliothèque de C qui n’avait pas vocation à devenir un langage de programmation."
+            "À l’origine, PHP s’appelait PHP/FI, pour **P**ersonal **H**ome **P**age Tools/**F**orm **I**nterpreter. C’était une simple bibliothèque de C qui n’avait pas vocation à devenir un langage de programmation.",
+			"Il est possible de nommer une variable d’après le contenu d’une autre variable, c’est ce qu’on appelle une variable dynamique !```php\n$hello = 'coucou';\n$$hello = 512;\nprint $coucou; // 512```"
         ]
     ],
 	[
 		"python",
 		[
 			"Le langage Python a été nommé en référence à la série télévisée *Monty Python's Flying Circus*, dont Guido van Rossum, le créateur du langage, était un grand fan.",
-			"En Python, `import this` affiche le 'Zen of Python', une liste de 19 aphorismes résumant la philosophie du langage."
+			"En Python, `import this` affiche le 'Zen of Python', une liste de 19 aphorismes résumant la philosophie du langage.",
+			"En Python, il est possible de retourner un String ou une liste très facilement avec `[::-1]`.```python\nprint(\"RETOURNE-MOI\"[::-1]) # IOM-ENRUOTER```"
+		]
+	],
+	[
+		"html",
+		[
+			"HTML et CSS associés ensemble sont Turing-complets, ce que signifie qu’il est en théorie possible d’y programmer n’importe quoi."
+		]
+	],
+	[
+		"christophe",
+		[
+			"M. Ye, 20 ans, est un Cyborg venu du futur."
 		]
 	]
 ]
