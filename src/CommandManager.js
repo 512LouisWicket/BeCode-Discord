@@ -24,7 +24,6 @@ class Command {
 
 class CommandManager {
     constructor(prefix) {
-
         this.prefix = prefix;
 
         // Map every command name with its data
@@ -42,12 +41,12 @@ class CommandManager {
     /**
      * @description Split the content of a message into a command name and an argument list
      * @param { String } content The content of the discord message
-     * @returns { Array<String, Array<String?>> } An array containing the command name and its list of arguments
+     * @returns { Array<String> } An array containing the command name and its arguments
      */
 
     parse(content) {
         const [command, ...args] = content.substring(this.prefix.length).split(/\s+/);
-        return [command, args];
+        return [command, args.join` `];
     }
 
     /**
