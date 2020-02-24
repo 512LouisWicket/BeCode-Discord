@@ -1,0 +1,33 @@
+[
+    [
+        "javascript",
+        [
+            "La première version de JavaScript a été codée par Brendan Eich en seulement dix jours !",
+            "Notch, le créateur de Minecraft, a un jour dit sur Twitter que JavaScript était son animal spirituel.",
+            "Dans les consoles de Chrome et Firefox, la variable `$_` contient la valeur de la dernière expression évaluée.",
+            "```javascript\nconsole.log(Infinity.toString()); // \"Infinity\"\nconsole.log(Infinity.toLocaleString()); // \"∞\"```",
+            "NaN (Not a Number) est une variable de type… Number :exploding_head:```javascript\nconsole.log(typeof NaN); // \"number\"```",
+            "L’opérateur de spread (...) peut être utilisé pour 'spliter' un String de manière simple et fiable !```javascript\nconst str = \"hey💩\"\nconsole.log([...str]); // [\"h\", \"e\", \"y\", \"💩\"]\nconsole.log(str.split(\"\")); // [\"h\", \"e\", \"y\", \"�\", \"�\"] <-- bug```",
+            "La propriété `length` d’une fonction donne son nombre de paramètres.```javascript\nfunction test(param1, param2) {\n   // ...\n}\nconsole.log(test.length); // 2```",
+            "`document.all` est une valeur *falsy*, c’est-à-dire qu’elle vaut `false` une fois convertie en booléen.```javascript\nconsole.log(Boolean(document.all)); // false```",
+            "La manière la plus simple de vider un tableau en JavaScript est de changer la valeur de sa propriété `length` par 0. ```javascript\nconst arr = [1, 2, 3];\narr.length = 0;\nconsole.log(arr); // []```",
+            "Le 'plus unaire' est certainement la manière la plus simple de convertir un String en nombre avec JavaScript. ```javascript\nconsole.log(+'512'); // 512```",
+            "`typeof null` vaut `object`, c’est un bug présent depuis la toute première version de JavaScript, dû à la manière dont étaient représentés les différents types de variable en binaire.",
+            "En JavaScript, NaN est la seule valeur qui n’est pas égale à elle-même.```javascript\nconsole.log(NaN === NaN); // false```",
+            "À l’origine, JavaScript aurait dû s’appeler 'Mocha'. C’est pour tirer parti de la popularité autrefois grandissante de Java qu’il fut finalement nommé 'JavaScript'."
+        ]
+    ],
+    [
+        "php",
+        [
+            "À l’origine, PHP s’appelait PHP/FI, pour **P**ersonal **H**ome **P**age Tools/**F**orm **I**nterpreter. C’était une simple bibliothèque de C qui n’avait pas vocation à devenir un langage de programmation."
+        ]
+    ],
+	[
+		"python",
+		[
+			"Le langage Python a été nommé en référence à la série télévisée *Monty Python's Flying Circus*, dont Guido van Rossum, le créateur du langage, était un grand fan.",
+			"En Python, `import this` affiche le 'Zen of Python', une liste de 19 aphorismes résumant la philosophie du langage."
+		]
+	]
+]
