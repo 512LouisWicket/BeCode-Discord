@@ -19,6 +19,7 @@ bot.on("message", msg => {
     if (msg.author.bot) return; /* Ensure the bot doesn’t respond to itself */
 
     const { content } = msg;
+    console.log(content)
     if (content.startsWith(prefix)) {
         const [command, args] = CM.parse(content);
         CM.exec(command, {args, msg, bot});
