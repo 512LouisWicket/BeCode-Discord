@@ -3,6 +3,8 @@
         "javascript",
         [
             "La première version de JavaScript a été codée par Brendan Eich en seulement dix jours !",
+            "En JavaScript, le chiffre qui précède la virgule d’un nombre décimal peut être omis.```javascript\nconsole.log(0.1 === .1); // true```",
+            "En JavaScript, il est possible d’écrire directement des nombres hexadécimaux, binaires et octaux en les précédant d’un préfixe spécial :```javascript\nlet bin = 0b1010; // 10\nlet hex = 0xa; // 10\nlet oct = 0o12; // 10```Il est également possible de préfixer un nombre octal par un simple 0, mais c’est généralement considéré comme une mauvaise pratique.```javascript\nlet oct = 012; // <-- pas bien```",
             "Notch, le créateur de Minecraft, a un jour dit sur Twitter que JavaScript était son animal spirituel.",
             "Dans les consoles de Chrome et Firefox, la variable `$_` contient la valeur de la dernière expression évaluée.",
             "```javascript\nconsole.log(Infinity.toString()); // \"Infinity\"\nconsole.log(Infinity.toLocaleString()); // \"∞\"```",
