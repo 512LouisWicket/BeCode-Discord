@@ -39,7 +39,7 @@ class CommandManager {
     }
 
     /**
-     * @description Split the content of a message into a command name and an argument list
+     * @description Split the content of a message into a command name and arguments
      * @param { String } content The content of the discord message
      * @returns { Array<String> } An array containing the command name and its arguments
      */
