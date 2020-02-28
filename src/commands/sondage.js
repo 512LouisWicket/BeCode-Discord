@@ -10,12 +10,18 @@ class sondage{
 
 const cmd = {
         name: "sondage",
-        alias: ["sondage", "debug"],
+        alias: ["sondage"],
         desc: "Commande de test",
         action({ msg, args } = {}) {
             let arg = args.split(",");
-            let call = new sondage(arg[0],arg[1],arg[2]);
-            msg.channel.send(":squid: "+"Un sondage est lancer"+" :squid:"+"\n"+"Durée du sondage: "+call.temps+" Heure"+"\n"+"Proposition 1: "+call.arg+"\n"+"proposition 2: "+call.arg2);
+            console.log(arg)
+            if (arg == undefined) {
+                let call = new sondage(arg[0],arg[1],arg[2]);
+                msg.channel.send(":squid: "+"Un sondage est lancer"+" :squid:"+"\n"+"Durée du sondage: "+call.temps+" Heure"+"\n"+"Proposition 1: "+call.arg+"\n"+"proposition 2: "+call.arg2);   
+            }
+            else{
+                msg.channel.send("try !sondage time,argument,argument")
+            }
         }
     };
 

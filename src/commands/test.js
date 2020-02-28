@@ -2,7 +2,7 @@
 
 const cmd = {
     name: "test",
-    alias: ["example", "debug"],
+    alias: ["example"],
     desc: "Commande de test",
     action({ msg } = {}) {
         msg.channel.send("Ceci est un simple test \u{1F601}");
