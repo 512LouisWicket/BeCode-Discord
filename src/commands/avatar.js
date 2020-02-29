@@ -2,7 +2,7 @@
 
 const cmd = {
     name: "avatar",
-    alias: ["pic", "debug"],
+    alias: ["pic"],
     desc: "Commande de test",
     action({ msg, args } = {}) {
         msg.channel.send("pseudo selectionner: "+args);

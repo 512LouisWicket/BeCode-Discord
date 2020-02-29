@@ -10,7 +10,7 @@ class sondage{
 
 const cmd = {
         name: "sondage",
-        alias: ["sondage", "debug"],
+        alias: [],
         desc: "Commande de test",
         action({ msg, args } = {}) {
             let arg = args.split(",");

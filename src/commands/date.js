@@ -14,7 +14,7 @@ message += date.getFullYear();
 
 const cmd = {
     name: "day",
-    alias: ["date", "debug"],
+    alias: ["date"],
     desc: "Commande qui donne l'heure et la date",
     action({ msg } = {}) {
         msg.channel.send(message);
