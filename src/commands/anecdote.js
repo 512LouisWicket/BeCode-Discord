@@ -16,6 +16,7 @@ const cmd = {
                 msg.channel.send(`Arf, aucune anecdote n’a été écrite pour le langage ${args[0]} \u{1F615}\n`);
             } else {
                 msg.channel.send(language[rand(language.length)]);
+
             }
         } else {
             msg.channel.send("Veuillez indiquer un langage de programmation !");

@@ -1,6 +1,6 @@
 "use strict";
 
-class sondage{
+class Sondage{
     constructor(temps,arg,arg2){
         this.temps= temps,
         this.arg= arg,
@@ -10,20 +10,33 @@ class sondage{
 
 const cmd = {
         name: "sondage",
-        alias: ["sondage"],
+        alias: [],
         desc: "Commande de test",
         action({ msg, args } = {}) {
-            let arg = args.split(",");
+            var arg = args.split(",");
             console.log(arg)
-            if (arg == undefined) {
-                let call = new sondage(arg[0],arg[1],arg[2]);
-                msg.channel.send(":squid: "+"Un sondage est lancer"+" :squid:"+"\n"+"Durée du sondage: "+call.temps+" Heure"+"\n"+"Proposition 1: "+call.arg+"\n"+"proposition 2: "+call.arg2);   
+
+            const timer = arg[0]*1000;
+
+            console.log(timer)
+
+            function end(){msg.channel.send(":squid: Le sondage est terminer les amis ! :squid:",)};
+            
+            if ( arg.length < 3 ) {
+                msg.channel.send(':warning: il manque des arguments :warning:\nEssaye ``!sondage **temps**, **argument** , **argument**``');
+            }
+            else if (arg[0]===''||arg[1]===''||arg[2]===''){
+                msg.channel.send(':warning: il manque des arguments :warning:\nEssaye ``!sondage **temps**, **argument** , **argument**``');
             }
             else{
-                msg.channel.send("try !sondage time,argument,argument")
+                let call = new Sondage(arg[0],arg[1],arg[2]);
+                msg.channel.send(":squid: "+"*Un sondage est lancer*"+" :squid:"+"\n"+"*Durée du sondage:* ``"+call.temps+" seconde``"+"\n"+"*Proposition 1:* ``"+call.arg+"``\n"+"*proposition 2:* ``"+call.arg2+'``');
+                setTimeout(end,timer)
+                console.log(call)
             }
+            
         }
-    };
+    }
 
 module.exports = cmd;
 
