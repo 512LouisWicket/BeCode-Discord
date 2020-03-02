@@ -46,8 +46,8 @@ const cmd = {
                     description : ":squid: "+"*Un sondage est lancer*"+" :squid:"+"\n"+"*Durée du sondage:* ``"+call.temps+" seconde``"+"\n"+"*Proposition 1:* ``"+call.arg+' '+'👍'+"``\n"+"*proposition 2:* ``"+call.arg2+' '+'👎'+"``"
                 }})
                 .then(msg =>{
-                    msg.react('👍');
                     msg.react('👎');
+                    msg.react('👍');
                     bot.on('messageReactionAdd', (reaction, user) =>{
                         
 
