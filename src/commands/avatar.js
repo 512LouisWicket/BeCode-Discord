@@ -37,3 +37,5 @@ const cmd = {
 };
 
 module.exports = cmd;
+
+//? By Louis Wicket & Vincent Vissers
