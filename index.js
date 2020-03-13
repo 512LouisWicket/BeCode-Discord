@@ -19,9 +19,15 @@ bot.on("message", msg => {
     if (msg.author.bot) return; /* Ensure the bot doesn’t respond to itself */
 
     const { content } = msg;
-    console.log(content)
     if (content.startsWith(prefix)) {
         const [command, args] = CM.parse(content);
         CM.exec(command, {args, msg, bot});
     }
 });
+
+// Greet the newcomers
+bot.on("guildMemberAdd", ({ user, guild }) => 
+    guild.channels.get(guild.systemChannelID).send(
+        `Bienvenue <@!${user.id}> sur le Discord de BeCode Charleroi ! \u{1F973}\nPense à indiquer ton prénom dans ton pseudo (clic droit sur l’image du serveur \u{2192} Changer le pseudo) afin qu’on puisse te reconnaître facilement \u{1F609}\n\nPasse un agréable moment parmi nous \u{1F37B}`
+    )
+);
