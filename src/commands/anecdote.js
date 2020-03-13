@@ -1,5 +1,10 @@
 "use strict";
 
+/**
+ * @author Louis Wicket
+ * @description Send a random tip about a programming language
+ */
+
 const anecdotes = new Map(require("../../data/anecdotes.json"));
 
 const rand = max => Math.random() * max | 0;
@@ -24,5 +29,3 @@ const cmd = {
 };
 
 module.exports = cmd;
-
-//? By Louis Wicket

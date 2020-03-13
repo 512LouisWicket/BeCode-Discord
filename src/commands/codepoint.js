@@ -1,5 +1,7 @@
 "use strict";
 
+// WIP
+
 const cmd = {
     name: "codepoint",
     alias: ["unicode"],
@@ -10,5 +12,3 @@ const cmd = {
 };
 
 module.exports = cmd;
-
-//? By Louis Wicket

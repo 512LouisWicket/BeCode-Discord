@@ -1,5 +1,11 @@
 "use strict";
 
+/**
+ * @author Vincent Vissers, Louis Wicket
+ */
+
+ // TODO: Trouver un moyen de prendre en charger les pseudos renommés
+
 function sendAvatar(msg, id, avatar) {
     if (id === void null) msg.channel.send("Aucun utilisateur n’a été trouvé !");
     else if (avatar === null) msg.channel.send("Aucun avatar trouvé pour cet utilisateur !");
@@ -37,5 +43,3 @@ const cmd = {
 };
 
 module.exports = cmd;
-
-//? By Louis Wicket & Vincent Vissers

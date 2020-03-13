@@ -1,5 +1,9 @@
 "use strict";
 
+/**
+ * @author Louis Wicket
+ */
+
 const cmd = {
     name: "test",
     alias: ["example", "debug"],
@@ -10,5 +14,3 @@ const cmd = {
 };
 
 module.exports = cmd;
-
-//? By Louis Wicket
