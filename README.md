@@ -9,8 +9,9 @@ TODO: description du projet
 3. Créer un fichier `config/config.json` contenant : 
 ```json
 {
-	"prefix": "préfixe des commandes",
-	"token": "token du bot à utiliser"
+	"prefix": "!",
+	"token": "token du bot à utiliser",
+	"telecommuting-mode": false
 }
 ```
 4. Ouvrir le terminal à la racine du projet et entrer la commande `node index.js`. Si l’installation s’est bien déroulée, le bot devrait démarrer
